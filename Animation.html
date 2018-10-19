@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Animation动画显示</title>
+    <style>
+        div{
+            width: 20px;
+            height: 150px;
+            background: pink;
+        }
+        /*定义关键帧的样式   关键帧是通过百分比来进行命名的   并且进行样式的设置*/
+        @-webkit-keyframes backColor{
+            0%{
+                background: red;
+                -webkit-transform:rotate(0deg);
+            }
+            10%{
+                background: yellow;
+                width: 100px;
+                -webkit-transform:rotate(10deg);
+            }
+            20%{
+                background: blueviolet;
+                -webkit-transform:rotate(20deg);
+            }
+            30%{
+                background: navajowhite;
+                -webkit-transform:rotate(30deg);
+            }
+            40%{
+                background: greenyellow;
+                width: 200px;
+                -webkit-transform:rotate(40deg);
+            }
+            50%{
+                background:green;
+                -webkit-transform:rotate(50deg);
+            }
+            60%{
+                background:slategray;
+                -webkit-transform:rotate(60deg);
+            }
+            70%{
+                background:green;
+                width: 500px;
+                -webkit-transform:rotate(70deg);
+            }
+            80%{
+                background:orangered;
+                -webkit-transform:rotate(80deg);
+            }
+            90%{
+                background: goldenrod;
+                -webkit-transform:rotate(90deg);
+            }
+            100%{
+                background: black;
+                width: 1000px;
+                -webkit-transform:rotate(100deg);
+            }
+        }
+        /*定义鼠标放上去的时候触发*/
+        div:hover{
+            -webkit-animation-name:backColor;
+            -webkit-animation-duration:5s;
+            -webkit-animation-timming-function:linear;
+            -webkit-animation-iteration-count:infinite;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Animation动画显示</h1>
+<div></div>
+
+</body>
+</html>
